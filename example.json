@@ -1,0 +1,165 @@
+{
+  "variables": {
+    "plant": [
+      "Raspberry",
+      "Strawberry",
+      "Gooseberry",
+      "Grape",
+      "Blueberry"
+    ],
+    "pet": [
+      "Fish",
+      "Dog",
+      "Cat",
+      "Parrot",
+      "Hamster"
+    ],
+    "nationality": [
+      "Chinese",
+      "Spanish",
+      "Ukrainian",
+      "Belorussian",
+      "Georgian"
+    ],
+    "chocolate": [
+      "Twix",
+      "Bounty",
+      "Snickers",
+      "KitKat",
+      "Mars"
+    ],
+    "color": [
+      "Green",
+      "Blue",
+      "White",
+      "Red",
+      "Yellow"
+    ]
+  },
+  "clues": [
+    {
+      "type": "simple",
+      "argument": {
+        "nationality": "Ukrainian"
+      },
+      "sentence": {
+        "color": "Red"
+      }
+    },
+    {
+      "type": "simple",
+      "argument": {
+        "nationality": "Belorussian"
+      },
+      "sentence": {
+        "pet": "Dog"
+      }
+    },
+    {
+      "type": "simple",
+      "argument": {
+        "plant": "Raspberry"
+      },
+      "sentence": {
+        "color": "Green"
+      }
+    },
+    {
+      "type": "simple",
+      "argument": {
+        "nationality": "Georgian"
+      },
+      "sentence": {
+        "plant": "Grape"
+      }
+    },
+    {
+      "type": "neighbour",
+      "argument": {
+        "color": "Green"
+      },
+      "sentence": {
+        "color": "White"
+      },
+      "offset": 1,
+      "left": true
+    },
+    {
+      "type": "simple",
+      "argument": {
+        "chocolate": "Twix"
+      },
+      "sentence": {
+        "pet": "Cat"
+      }
+    },
+    {
+      "type": "simple",
+      "argument": {
+        "chocolate": "Snickers"
+      },
+      "sentence": {
+        "color": "Yellow"
+      }
+    },
+    {
+      "type": "number",
+      "house": 3,
+      "argument": {
+        "plant": "Gooseberry"
+      }
+    },
+    {
+      "type": "number",
+      "house": 1,
+      "argument": {
+        "nationality": "Spanish"
+      }
+    },
+    {
+      "type": "neighbour",
+      "argument": {
+        "chocolate": "Mars"
+      },
+      "sentence": {
+        "pet": "Parrot"
+      }
+    },
+    {
+      "type": "neighbour",
+      "argument": {
+        "pet": "Hamster"
+      },
+      "sentence": {
+        "chocolate": "Snickers"
+      }
+    },
+    {
+      "type": "simple",
+      "argument": {
+        "chocolate": "KitKat"
+      },
+      "sentence": {
+        "plant": "Strawberry"
+      }
+    },
+    {
+      "type": "simple",
+      "argument": {
+        "chocolate": "Bounty"
+      },
+      "sentence": {
+        "nationality": "Chinese"
+      }
+    },
+    {
+      "type": "neighbour",
+      "argument": {
+        "nationality": "Spanish"
+      },
+      "sentence": {
+        "color": "Blue"
+      }
+    }
+  ]
+}
